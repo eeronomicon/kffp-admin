@@ -821,7 +821,7 @@ boom, boom@4.x.x, boom@^4.0.0:
   dependencies:
     hoek "4.x.x"
 
-boom@2.x.x:
+boom@2.x.x, boom@^2.8.0:
   version "2.10.1"
   resolved "https://registry.yarnpkg.com/boom/-/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
   dependencies:
@@ -1288,6 +1288,16 @@ ecdsa-sig-formatter@1.0.7:
   dependencies:
     base64-url "^1.2.1"
 
+elasticsearch@^11.0.1:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/elasticsearch/-/elasticsearch-11.0.1.tgz#d180684c6bde7ecfa0fa24e62fa1c872eeae08e7"
+  dependencies:
+    chalk "^1.0.0"
+    forever-agent "^0.6.0"
+    lodash "^3.10.0"
+    lodash-compat "^3.0.0"
+    promise "^7.1.1"
+
 emojis-list@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
@@ -1702,7 +1712,7 @@ for-own@^0.1.4:
   dependencies:
     for-in "^0.1.5"
 
-forever-agent@~0.6.1:
+forever-agent@^0.6.0, forever-agent@~0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/forever-agent/-/forever-agent-0.6.1.tgz#fbc71f0c41adeb37f96c577ad1ed42d8fdacca91"
 
@@ -1914,6 +1924,15 @@ hapi-auth-jwt2@^7.2.0:
     cookie "^0.3.1"
     jsonwebtoken "^7.1.9"
 
+hapi-elastic@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/hapi-elastic/-/hapi-elastic-0.3.0.tgz#0c1b3cb037e4c9c9d1f85e780a1ae1d2a1927cfd"
+  dependencies:
+    boom "^2.8.0"
+    elasticsearch "^11.0.1"
+    hoek "^2.14.0"
+    joi "^6.6.1"
+
 hapi-mongodb:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/hapi-mongodb/-/hapi-mongodb-6.2.0.tgz#18f9047180608683dd806780b60ca5c82938c6a1"
@@ -2019,7 +2038,7 @@ history@^3.0.0:
     query-string "^4.2.2"
     warning "^3.0.0"
 
-hoek@2.x.x:
+hoek@2.x.x, hoek@^2.14.0:
   version "2.16.3"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
 
@@ -2652,7 +2671,7 @@ joi@9.X.X, joi@9.x.x, joi@^9.0.4:
     moment "2.x.x"
     topo "2.x.x"
 
-joi@^6.10.1:
+joi@^6.10.1, joi@^6.6.1:
   version "6.10.1"
   resolved "https://registry.yarnpkg.com/joi/-/joi-6.10.1.tgz#4d50c318079122000fe5f16af1ff8e1917b77e06"
   dependencies:
@@ -2835,6 +2854,10 @@ loader-utils@^0.2.11:
     json5 "^0.5.0"
     object-assign "^4.0.1"
 
+lodash-compat@^3.0.0:
+  version "3.10.2"
+  resolved "https://registry.yarnpkg.com/lodash-compat/-/lodash-compat-3.10.2.tgz#c6940128a9d30f8e902cd2cf99fd0cba4ecfc183"
+
 lodash-es@^4.2.1:
   version "4.16.6"
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.16.6.tgz#c8552faedaa4d1d591de8da9b3980ef1c52efa08"
@@ -2946,6 +2969,10 @@ lodash.once@^4.0.0:
 lodash.restparam@^3.0.0:
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/lodash.restparam/-/lodash.restparam-3.6.1.tgz#936a4e309ef330a7645ed4145986c85ae5b20805"
+
+lodash@^3.10.0:
+  version "3.10.1"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
 lodash@^4.0.0, lodash@^4.14.0, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0:
   version "4.16.6"

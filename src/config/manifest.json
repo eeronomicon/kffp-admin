@@ -55,6 +55,17 @@
         },
         {
             "plugin": {
+                "register": "hapi-elastic",
+                "options": {
+                    "config": {
+                        "host": "http://localhost:9200",
+                        "log": "error"
+                    }
+                }
+            }
+        },
+        {
+            "plugin": {
                 "register": "hapi-webpack-plugin",
                 "options": "./webpack.config.js"
             }

@@ -9,7 +9,26 @@ import {
 
 import Playlist from '../../models/playlist';
 
+
 exports.register = function (server, options, next) {
+
+    server.route({
+        path: '/api/songs/search',
+        method: 'GET',
+        config: {
+            auth: false,
+            handler: (request, reply) => {
+                const elasticsearch = server.plugins['hapi-elastic'].es;
+                // TODO @ma: this needs attention
+
+                // const client = new elasticsearch.Client({
+                //     host: '127.0.0.1:9200',
+                //     log: 'error'
+                // });
+                // console.log(client);
+            }
+        }
+    })
     server.route({
         path: '/api/users/verify',
         method: 'GET',
